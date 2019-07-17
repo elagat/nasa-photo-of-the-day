@@ -1,4 +1,6 @@
 import React from "react";
+import ApodGrid from "../components/ApodGrid.js";
+
 import "./App.css";
 
 function App() {
