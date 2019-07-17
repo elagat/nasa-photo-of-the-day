@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <ApodGrid limit={10}/>
+      <ApodGrid limit={10} />
     </div>
   );
 }
