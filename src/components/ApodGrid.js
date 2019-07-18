@@ -3,13 +3,13 @@ import axios from "axios";
 import ApodCard from "./ApodCard.js"
 
 function ApodGrid({ limit }) {
-  const [mediaUrl, setMediaUrl] = useState([])
+  const [photoObject, setPhotoObject] = useState([])
 
   useEffect( () => {
     axios
       .get(`https://api.nasa.gov/planetary/apod?api_key=FInBtIykxEFRHLUAbzXEjZVdcjP594JgzEPhWkQR`)
       .then(res => {
-        setMediaUrl(res.data);
+        setPhotoObject(res.data);
         console.log(res.data);
       })
       .catch(err => console.log(err));
