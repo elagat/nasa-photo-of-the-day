@@ -1,11 +1,13 @@
-// import React from "react";
-//
-// function ApodCard({ imgUrl }) {
-//   return (
-//     <div className="apod-card">
-//       <img src={imgUrl} style={{ max-width: "200px";}} />
-//     </div>
-//   );
-// }
-//
-// export default ApodCard;
+import React from "react";
+
+function ApodCard(props) {
+  return (
+    <div className="apod-card">
+      <h2>{props.title}</h2>
+      <img src={props.url} />
+      <p>{props.explanation}</p>
+    </div>
+  );
+}
+
+export default ApodCard;

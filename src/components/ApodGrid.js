@@ -17,8 +17,14 @@ function ApodGrid({ limit }) {
 
 
   return (
-    <div className="apod-grid">Hello</div>
-  )
+    <div className="apod-grid">
+      {Object.keys(photoObject).map(photoUrl => {
+        console.log(photoUrl);
+        console.log(photoObject);
+        return <ApodCard imageUrl={photoObject} key={photoUrl} />;
+      })}
+    </div>
+  );
 }
 
 export default ApodGrid;
